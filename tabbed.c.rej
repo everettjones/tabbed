@@ -1,0 +1,11 @@
+--- tabbed.c
++++ tabbed.c
+@@ -154,7 +153,7 @@ static void (*handler[LASTEvent]) (const XEvent *) = {
+ 	[MapRequest] = maprequest,
+ 	[PropertyNotify] = propertynotify,
+ };
+-static int bh, wx, wy, ww, wh, vbh;
++static int bh, wx, wy, ww, wh;
+ static unsigned int numlockmask;
+ static Bool running = True, nextfocus, doinitspawn = True,
+             fillagain = False, closelastclient = False,
